@@ -1,0 +1,35 @@
+ATTEROTECH MCHstreamer Talker A4 build verification
+===================================================
+
+Firmware version: 6.1.1-HYB4.118-A4-MSRP-REARM
+Application:      ATTEROTECH_MCHSTREAMER_TALKER_A4
+Toolchain:        xTIMEcomposer Community 14.4.1
+Build result:     SUCCESS (constraints passed)
+
+Flash image:
+  File: ATTEROTECH_MCHSTREAMER_TALKER_A4.xe
+  Size: 3,702,792 bytes
+  SHA-256: 4146BE514C073948B8DD9A6180109BAD07F234C83C4001D2F4B93012B277A6F8
+
+Workspace archive:
+  File: ATTEROTECH_MCHSTREAMER_TALKER_A4_WORKSPACE.zip
+  Size: 928,733 bytes
+  SHA-256: 3DD33699A47E7A9F295634425608DE95BBADD397F7819387A8F4379038BC2141
+
+Resource use:
+  Tile 0: 6/8 cores, 7/10 timers, 25/32 chanends
+          stack 4,284 bytes, program 50,748 bytes, free lower bound 10,504 bytes
+  Tile 1: 7/8 cores, 8/10 timers, 25/32 chanends
+          stack 5,236 bytes, program 38,452 bytes, free lower bound 21,848 bytes
+
+Embedded identity verified:
+  6.1.1-HYB4.118-A4-MSRP-REARM
+  MCHstreamer 4WAY DSP Talker
+
+Functional scope of A4:
+  The first genuinely new listener now re-arms a stale POTENTIAL XMOS source
+  through its normal DISABLED-to-POTENTIAL initialization path. Duplicate ACMP
+  requests and already-running sources are left untouched. No audio-sample,
+  I2S, CRF, AAF-format, gain, channel-order, or pin-map changes were made.
+
+Hardware/network validation: PENDING
